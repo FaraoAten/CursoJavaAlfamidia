@@ -13,6 +13,10 @@ public class Main {
        
        monitor.exibirMensagem("Resolução ajustada.");
        
+       monitor.ajustarResolucao(1600);
+       
+       monitor.exibirMensagem("Resolução ajustada.");
+       
        monitor.desligar();
     }
 }

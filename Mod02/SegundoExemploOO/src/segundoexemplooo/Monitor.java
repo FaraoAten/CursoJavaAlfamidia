@@ -1,13 +1,20 @@
 package segundoexemplooo;
 
+/*
+Limitadores de acesso:
+- public: qualquer um pode acessar diretamente.
+- protected: apenas a classe e suas herdeiras podem acessar diretamente.
+- private: apenas a classe pode acessar diretamente.
+*/
+
 public class Monitor {
     //Atributos do monitor.
     private int resolucao;
-    private String tipo;
+    private String tipo, simbolo;
     
     //Construtor - usado para inicializar os dados de um objeto.
     public Monitor(){
-        this.resolucao = 1024;
+        ajustarResolucao(1024);
         this.tipo = "LED";
     }
     
@@ -23,8 +30,10 @@ public class Monitor {
     }
     
     public void exibirMensagem(String mensagem){
+        System.out.println("\n"+this.simbolo);
         System.out.println("Resolução Atual: "+this.resolucao);
         System.out.println(mensagem);
+        System.out.println(this.simbolo+"\n");
     }
     
     //Métodos auxiliares para ajustar os atributos.
@@ -34,5 +43,17 @@ public class Monitor {
         }else{
             this.resolucao = resolucao;
         }
+        representarResolucao();
+    }
+    
+    //Método para ajustar o símbolo que representa a resolução
+    private void representarResolucao(){
+        String simbolo = "";
+        int qnt = (int) (this.resolucao/100);
+        
+        for(int i=0; i<qnt; i++){
+           simbolo += "-"; 
+        }
+        this.simbolo = simbolo;        
     }
 }
