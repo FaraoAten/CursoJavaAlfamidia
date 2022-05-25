@@ -25,6 +25,5 @@ public class TesteArrays {
         System.out.println(arraylist.size());//Retorna a quantia de elementos.
         System.out.println("\n=================================\n");
         System.out.println(arraylist.get(0));//Retorna o elemento presente naquela posição.
-        System.out.println("\n=================================\n");
     }
 }
