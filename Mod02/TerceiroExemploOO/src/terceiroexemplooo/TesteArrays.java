@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class TesteArrays {
     //Podemos declarar variáveis para comportar mais de um valor (Array).
-    String[] nomes = {"Aten", "João", "Lucas"};//Vetor pré-inicializado
+    private String[] nomes = {"Aten", "João", "Lucas"};//Vetor pré-inicializado
     
-    int[] idades = new int[3];//Vetor vazio.
+    private int[] idades = new int[3];//Vetor vazio.
     
     //Um poucos sobre ArrayList, a evolução do array tradicional
-    ArrayList<String> arraylist = new ArrayList<>();
+    private ArrayList<String> arraylist = new ArrayList<>();
     
     public void demonstrarMetodos(){
         idades[0] = 20;//Inserindo valores no Array vazio

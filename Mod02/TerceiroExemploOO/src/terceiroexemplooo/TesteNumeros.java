@@ -3,16 +3,16 @@ package terceiroexemplooo;
 public class TesteNumeros {
     //No Java temos classes que representam tipos
     //para fazermos conversões etc...
-    String snro = "1234";
-    int inro = Integer.parseInt(snro);
-    float fnro = Float.parseFloat(snro);
-    double dnro = Double.parseDouble(snro);
-    long lnro = Long.parseLong(snro);
+    private String snro = "1234";
+    private int inro = Integer.parseInt(snro);
+    private float fnro = Float.parseFloat(snro);
+    private double dnro = Double.parseDouble(snro);
+    private long lnro = Long.parseLong(snro);
     
     //Também é possível realizar a conversão oposta
-    int ival = 9876;
-    String sval = Integer.toString(ival);
-    String sval2 = String.valueOf(ival);
+    private int ival = 9876;
+    private String sval = Integer.toString(ival);
+    private String sval2 = String.valueOf(ival);
     
     //E temos a classe Math para outras funções aritiméticas
     public void demonstrarMetodos(){

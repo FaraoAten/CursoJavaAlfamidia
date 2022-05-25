@@ -10,5 +10,8 @@ public class Main {
         
         TesteArrays arr = new TesteArrays();
         arr.demonstrarMetodos();
+        
+        TesteJanela jan = new TesteJanela();
+        jan.demonstrarMetodos();
     }    
 }
