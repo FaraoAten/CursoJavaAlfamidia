@@ -18,8 +18,13 @@ public class FuncionarioIntegral extends Funcionario{
         this.salario = salario;
     }
     
+    /**
+     * Método para realizar o calculo do salário de um funcionário integral
+     * @return double
+     */
     @Override
     public double calcularSalario(){
-        return 0.0;
+        double salarioFinal = this.salario * this.TAXA;
+        return salarioFinal;
     }
 }

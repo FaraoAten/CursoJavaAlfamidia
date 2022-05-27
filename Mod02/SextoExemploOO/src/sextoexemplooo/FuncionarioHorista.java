@@ -21,8 +21,13 @@ public class FuncionarioHorista extends Funcionario{
         this.valorHora = valorHora;
     }
     
+    /**
+     * Método para realizar o calculo do salário de um funcionário horista
+     * @return double
+     */
     @Override
     public double calcularSalario(){
-        return 0.0;
+        double salarioFinal = (this.qtdHoras * this.valorHora) * this.TAXA;
+        return salarioFinal;
     }
 }
